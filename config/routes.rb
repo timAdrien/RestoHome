@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  root 'widgets#index'
+  root 'welcome#index'
   get 'widgets' => 'widgets#index'
 
   # Example of regular route:
