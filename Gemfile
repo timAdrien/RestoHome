@@ -33,13 +33,13 @@ gem 'spring',        group: :development
 
 gem 'puma'
 
-gem 'carrierwave'
-gem 'cloudinary'
+#gem 'carrierwave'
+#gem 'cloudinary'
 
-gem 'attachinary'
-gem 'jquery-fileupload-rails'
+#gem 'attachinary'
+#gem 'jquery-fileupload-rails'
 
-gem 'seedbank'
+#gem 'seedbank'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
