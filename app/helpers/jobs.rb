@@ -3,8 +3,8 @@ class Jobs
     if !session[:paniers]
       session[:paniers] = []
     end
-    if !session[:connected]
-      session[:connected] = false
+    if !session[:user_id]
+      session[:user_id] = false
     end
   end
 end
