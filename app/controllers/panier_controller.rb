@@ -3,10 +3,6 @@ require 'json'
 
 class PanierController < ApplicationController
   def index
-    if session[:paniers]
-    else
-      session[:paniers] = []
-    end
   end
   def destroy
     session[:paniers].delete_at(params[:id].to_i)
