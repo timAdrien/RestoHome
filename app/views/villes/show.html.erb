@@ -1,0 +1,13 @@
+une ville affiché
+
+les restaurants de la villes :
+<br>
+<% @restaurants.each do |restaurant| %>
+    <div>
+      <span><%= restaurant[:name] %></span>
+      <span><%= restaurant[:description] %></span>
+      <span><a href="/restaurants/<%= restaurant[:id] %>">voir le restaurant</a></span>
+    </div>
+<% end %>
+
+<a href="/villes">retour au villes</a>
