@@ -32,7 +32,7 @@ gem 'spring',        group: :development
 
 
 gem 'puma'
-#gem 'attachinary'
+gem 'attachinary'
 
 #gem 'carrierwave'
 #gem 'cloudinary'
