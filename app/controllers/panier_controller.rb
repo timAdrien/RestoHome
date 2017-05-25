@@ -1,6 +1,3 @@
-
-require 'json'
-
 class PanierController < ApplicationController
   def index
   end

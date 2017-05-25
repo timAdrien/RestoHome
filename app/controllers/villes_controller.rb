@@ -1,5 +1,9 @@
 class VillesController < ApplicationController
   def index
+    if session[:paniers]
+    else
+      session[:paniers] = []
+    end
     @villes = [
         {
             :id => "1",
