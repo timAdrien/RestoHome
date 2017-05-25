@@ -67,7 +67,7 @@ plat_list = [
 plat_list.each do |name, description, restaurant|
   Plat.create( name: name, description: description, restaurant: restaurant.first )
 end
-
+ 
 User.create([{ username: 'Admin', mdp: 'admin' }])
 User.create([{ username: 'Guest', mdp: 'guest' }])
 User.create([{ username: 'Meltial', mdp: 'meltial' }])
