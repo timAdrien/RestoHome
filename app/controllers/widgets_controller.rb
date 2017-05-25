@@ -4,6 +4,7 @@ class WidgetsController < ApplicationController
   # GET /widgets
   # GET /widgets.json
   def index
+    Jobs.new(session)
     @widgets = Widget.all
   end
 

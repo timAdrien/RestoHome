@@ -1,8 +1,5 @@
 class WelcomeController < ApplicationController
-
-  # GET /welcome
   def index
-
+    Jobs.new(session)
   end
-
 end
