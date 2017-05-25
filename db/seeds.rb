@@ -15,23 +15,23 @@ Ville.create([{name: 'Renne', description: 'Froid !'}])
 Ville.create([{name: 'Bordeaux', description: 'Vin !'}])
 
 restaurant_list = [
-    ["La locomotive", "RESTAURANT TRADITIONNEL du MARDI au SAMEDI de 11h30 à 14h30 et le SAMEDI à partir de 19h. CREPERIE tous les Samedis Midi et Soir.", Ville.where(:name => 'Paris')],
-    ["The Hello", "Restaurant joyeux, venez manger, boire dans la bonne humeur !", Ville.where(:name => 'Paris')],
-    ["ChinToque", "Vous vous sentez invincible ? Venez tenter l'experience tant culinaire que terrifiante !", Ville.where(:name => 'Lyon')],
-    ["Pronto Pizza", "Idéalement situé dans l'ancien coeur de Lagnieu, Pronto Pizza vous propose la dégustation de pizzas aux goûts divers et variés selon vos envies à emporter, en livraison à domicile ou sur votre lieu de travail*.", Ville.where(:name => 'Renne')],
-    ["La Cuisine des Anges", "Il est communément admis qu'il est impossible de satisfaire les innombrables goûts de personnes assises autour d'une grande table... Il est pourtant possible d' enthousiasmer 98% de convives même s'ils n'ont pas choisi leur menu.", Ville.where(:name => 'Renne')],
-    ["Au Chantilly", "Christelle vous proposent une cuisine de terroir, une cuisine maison, faite avec des produits de saison sélectionnés pour leur qualité et pour votre plus grand plaisir. Mais toujours avec le sourire, et toujours à des prix raisonnables !", Ville.where(:name => 'Renne')],
-    ["AMERICAN BISTRO 33", "Bienvenue à l'AMERICAN BISTRO 33 situé au Best Western Bordeaux Aéroport.", Ville.where(:name => 'Bordeaux')],
-    ["La maison", "Notre restaurant est un lieu de détente où l’on mange des produits naturels et de qualité servis en toute simplicité et authenticité mais avec le plus grand soin.", Ville.where(:name => 'Bordeaux')],
-    ["Romarin", "Au coeur de la Provence, aux portes du Lubéron, de la Camargue et des Alpilles, le Romarin vous accueille tout prés de “ la cité des papes ” haut lieu du théâtre avec le Festival d´Avignon, au coeur du vieux village de Barbentane, pour goûter la cuisine ensoleillée du sud de la France.", Ville.where(:name => 'Bordeaux')],
-    ["Romarin Pizza", "Au coeur de la Roma, aux portes du Langla, de la Koma et des Alpages, le RomarinPizza vous accueille tout prés de “ la cité des anglais ” haut lieu de fête avec le Festival d´Anton, au coeur du vieux village de Barberousse, pour goûter la tornade culinaire ensoleillée du Nord de la France.", Ville.where(:name => 'Bordeaux')],
-    ["The Dark Mention", "Customisez votre plat, autant de possibilités que ce que vous pourrez imaginer !", Ville.where(:name => 'Toulon')],
-    ["Le bistrot gourmand", "À deux pas du vieux Nice et de la Promenade des Anglais, Le Bistrot Gourmand vous ouvre son décor lumineux et design, avec sa grande vitre ouvrant sur la terrasse et sa gastronomie méditerranéenne devenue une référence.", Ville.where(:name => 'Toulon')],
-    ["Le bistrot du Sommelier", "Au coeur du Village de Valbonne, Carine et Eric vous reçoivent au Bistrot du Sommelier pour un moment de plaisir et de détente.", Ville.where(:name => 'Toulon')]
+    ["http://loremflickr.com/320/240/restaurant/?random=", "La locomotive", "RESTAURANT TRADITIONNEL du MARDI au SAMEDI de 11h30 à 14h30 et le SAMEDI à partir de 19h. CREPERIE tous les Samedis Midi et Soir.", Ville.where(:name => 'Paris')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "The Hello", "Restaurant joyeux, venez manger, boire dans la bonne humeur !", Ville.where(:name => 'Paris')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "ChinToque", "Vous vous sentez invincible ? Venez tenter l'experience tant culinaire que terrifiante !", Ville.where(:name => 'Lyon')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "Pronto Pizza", "Idéalement situé dans l'ancien coeur de Lagnieu, Pronto Pizza vous propose la dégustation de pizzas aux goûts divers et variés selon vos envies à emporter, en livraison à domicile ou sur votre lieu de travail*.", Ville.where(:name => 'Renne')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "La Cuisine des Anges", "Il est communément admis qu'il est impossible de satisfaire les innombrables goûts de personnes assises autour d'une grande table... Il est pourtant possible d' enthousiasmer 98% de convives même s'ils n'ont pas choisi leur menu.", Ville.where(:name => 'Renne')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "Au Chantilly", "Christelle vous proposent une cuisine de terroir, une cuisine maison, faite avec des produits de saison sélectionnés pour leur qualité et pour votre plus grand plaisir. Mais toujours avec le sourire, et toujours à des prix raisonnables !", Ville.where(:name => 'Renne')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "AMERICAN BISTRO 33", "Bienvenue à l'AMERICAN BISTRO 33 situé au Best Western Bordeaux Aéroport.", Ville.where(:name => 'Bordeaux')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "La maison", "Notre restaurant est un lieu de détente où l’on mange des produits naturels et de qualité servis en toute simplicité et authenticité mais avec le plus grand soin.", Ville.where(:name => 'Bordeaux')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "Romarin", "Au coeur de la Provence, aux portes du Lubéron, de la Camargue et des Alpilles, le Romarin vous accueille tout prés de “ la cité des papes ” haut lieu du théâtre avec le Festival d´Avignon, au coeur du vieux village de Barbentane, pour goûter la cuisine ensoleillée du sud de la France.", Ville.where(:name => 'Bordeaux')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "Romarin Pizza", "Au coeur de la Roma, aux portes du Langla, de la Koma et des Alpages, le RomarinPizza vous accueille tout prés de “ la cité des anglais ” haut lieu de fête avec le Festival d´Anton, au coeur du vieux village de Barberousse, pour goûter la tornade culinaire ensoleillée du Nord de la France.", Ville.where(:name => 'Bordeaux')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "The Dark Mention", "Customisez votre plat, autant de possibilités que ce que vous pourrez imaginer !", Ville.where(:name => 'Toulon')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "Le bistrot gourmand", "À deux pas du vieux Nice et de la Promenade des Anglais, Le Bistrot Gourmand vous ouvre son décor lumineux et design, avec sa grande vitre ouvrant sur la terrasse et sa gastronomie méditerranéenne devenue une référence.", Ville.where(:name => 'Toulon')],
+    ["http://loremflickr.com/320/240/restaurant/?random=", "Le bistrot du Sommelier", "Au coeur du Village de Valbonne, Carine et Eric vous reçoivent au Bistrot du Sommelier pour un moment de plaisir et de détente.", Ville.where(:name => 'Toulon')]
 ]
 
-restaurant_list.each do |name, description, ville|
-  Restaurant.create(name: name, description: description, ville: ville.first)
+restaurant_list.each do |image, name, description, ville|
+  Restaurant.create(image: image, name: name, description: description, ville: ville.first)
 end
 
 plat_list = [
