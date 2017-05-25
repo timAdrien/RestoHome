@@ -1,0 +1,12 @@
+<h1>Villes</h1>
+
+
+<table class="table table-bordered table-hover">
+  <% @villes.each do |ville| %>
+      <tr>
+        <td><%= ville["name"] %></td>
+        <td><%= ville["description"] %></td>
+        <td><a href="/villes/<%= ville["id"] %>">voir la ville</a></td>
+      </tr>
+  <% end %>
+</table>

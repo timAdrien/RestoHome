@@ -12,7 +12,7 @@
 <nav class="navbar navbar-default navbar-static-top navbar-inverse">
   <div class="container">
     <ul class="nav navbar-nav">
-      <li class="active">
+      <li>
         <a href="/"><span class="glyphicon glyphicon-home"></span> Accueil</a>
       </li>
       <li>
@@ -21,13 +21,18 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="navbar-right">
-        <a href="/panier"><span class="glyphicon glyphicon-shopping-cart"></span> Panier ( 0 )</a>
+        <a href="/panier"><span class="glyphicon glyphicon-shopping-cart"></span> Panier ( <%= session[:paniers].count %> )</a>
       </li>
     </ul>
   </div>
 </nav>
-
-<%= yield %>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <%= yield %>
+  </div>
+  <div class="col-md-2"></div>
+</div>
 <pre>
   <%= session[:paniers] %>
 </pre>

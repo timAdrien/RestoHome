@@ -1,0 +1,8 @@
+- systeme de connexion
+- enregistrer les commandes
+
+- sur mon compte je peux voir le récapitulatif des commandes
+
+- si on est pas connecté au moment de valider le panier pour voir le recap on force l'inscription
+- créer une adresse par validation de panier
+- message d'erreur

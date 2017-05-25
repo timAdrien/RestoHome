@@ -1,0 +1,16 @@
+<h1>Panier</h1>
+
+<table class="table table-bordered table-hover">
+  <% session[:paniers].each_with_index do |panier, index| %>
+      <tr>
+        <td><%= panier["name"] %></td>
+        <td><img width="50" src="<%= panier["image"] %>"></td>
+        <td><%= panier["description"] %></td>
+        <td><%= link_to 'supprimer ce plat', "panier/#{index}", method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+</table>
+
+<% if session[:paniers].count %>
+    votre panier est vide
+<% end %>
