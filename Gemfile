@@ -32,11 +32,11 @@ gem 'spring',        group: :development
 
 
 gem 'puma'
+#gem 'attachinary'
 
 #gem 'carrierwave'
 #gem 'cloudinary'
 
-#gem 'attachinary'
 #gem 'jquery-fileupload-rails'
 
 #gem 'seedbank'
