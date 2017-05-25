@@ -1,0 +1,12 @@
+<a href="/villes/<%= @restaurant["ville_id"] %>">retour</a>
+<h1>Restaurant <%= @restaurant["name"] %> </h1>
+<br>
+<table class="table table-bordered table-hover">
+  <% @restaurant.plats.each do |plat| %>
+      <tr>
+        <td><%= plat["name"] %></td>
+        <td><%= plat["description"] %></td>
+        <td><%= link_to "ajouter au panier", "/panier/#{plat["id"]}" %></td>
+      </tr>
+  <% end %>
+</table>

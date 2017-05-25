@@ -6,11 +6,11 @@
         <td><%= panier["name"] %></td>
         <td><img width="50" src="<%= panier["image"] %>"></td>
         <td><%= panier["description"] %></td>
-        <td><%= link_to 'supprimer ce plat', "panier/#{index}", method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        <td><%= link_to 'supprimer ce plat', "panier/#{index}", method: :delete, data: {confirm: 'Êtes vous sure de votre choix ?'} %></td>
       </tr>
   <% end %>
 </table>
 
-<% if session[:paniers].count %>
+<% if session[:paniers].count == 0 %>
     votre panier est vide
 <% end %>

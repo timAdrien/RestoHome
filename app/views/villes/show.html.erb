@@ -1,2 +1,12 @@
-<h1>Villes de <%= @ville["name"] %></h1>
-<h5><%= @ville["description"] %></h5>
+<a href="/villes">retour</a>
+<h1>Restaurants de la ville de <%= @ville["name"] %> </h1>
+<br>
+<table class="table table-bordered table-hover">
+  <% @ville.restaurants.each do |restaurant| %>
+      <tr>
+        <td><%= restaurant["name"] %></td>
+        <td><%= restaurant["description"] %></td>
+        <td><%= link_to "voir le restaurant", "/restaurants/#{restaurant["id"]}"%></td>
+      </tr>
+  <% end %>
+</table>
