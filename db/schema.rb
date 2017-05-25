@@ -11,10 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170525164401) do
+ActiveRecord::Schema.define(version: 20170525224325) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "adresses", force: :cascade do |t|
+    t.string   "code_postal"
+    t.string   "ville"
+    t.string   "voie"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "articles", force: :cascade do |t|
+    t.integer  "commande_id"
+    t.integer  "plat_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "attachinary_files", force: :cascade do |t|
     t.integer  "attachinariable_id"
@@ -31,6 +46,13 @@ ActiveRecord::Schema.define(version: 20170525164401) do
   end
 
   add_index "attachinary_files", ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent", using: :btree
+
+  create_table "commandes", force: :cascade do |t|
+    t.integer  "adresse_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "plats", force: :cascade do |t|
     t.string   "name"

@@ -1,0 +1,24 @@
+<h1>Compte</h1>
+
+<h4>Récapitulatif commande</h4>
+
+<table class="table table-bordered table-hover">
+  <% @user.commandes.each do |commande| %>
+      <tr>
+        <td><%= commande["id"] %></td>
+        <td><%= commande.adresse["voie"] %> - <%= commande.adresse["ville"] %>
+          - <%= commande.adresse["code_postal"] %></td>
+        <td>
+          <% commande.articles.each do |article| %>
+            <ul>
+              <li><%= article.plat["name"] %></li>
+            </ul>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
+</table>
+
+<% if @user.commandes.count == 0 %>
+    vous n'avez aucune commande
+<% end %>

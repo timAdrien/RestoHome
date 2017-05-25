@@ -10,6 +10,10 @@
   <% end %>
 </table>
 
+<% if session[:paniers].count != 0 %>
+    <a href="/adresse" class="btn btn-success">valider le panier</a>
+<% end %>
+
 <% if session[:paniers].count == 0 %>
     votre panier est vide
 <% end %>

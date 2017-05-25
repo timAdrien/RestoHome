@@ -6,7 +6,7 @@ class WidgetsControllerTest < ActionController::TestCase
   end
 
   test "should get index" do
-    get :index
+    get :adresse
     assert_response :success
     assert_not_nil assigns(:widgets)
   end

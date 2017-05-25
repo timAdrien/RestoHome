@@ -1,0 +1,8 @@
+<h1>Entrer une adresse de livraison pour votre commande</h1>
+
+<%= form_for(:adresse, :url => {:controller => 'panier', :action => 'create'}) do |f| %>
+    <p> Code postal:</br> <%= f.text_field :code_postal%> </p>
+    <p> Ville:</br> <%= f.text_field :ville%></p>
+    <p> Voie:</br> <%= f.text_field :voie%></p>
+    <%= f.submit :Signup %>
+<% end %>

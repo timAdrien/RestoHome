@@ -20,11 +20,22 @@
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
+      <% if session[:user_id] == false %>
+          <li class="navbar-right">
+            <a href="/users"><span class="glyphicon glyphicon-user"></span> Se connecter</a>
+          </li>
+      <% end %>
+      <% if session[:user_id] != false %>
+          <li class="navbar-right">
+            <a href="/disconnect"><span class="glyphicon glyphicon-off"></span> Se deconnecter</a>
+          </li>
+          <li class="navbar-right">
+            <a href="/account"><span class="glyphicon glyphicon-user"></span> Mon compte</a>
+          </li>
+      <% end %>
       <li class="navbar-right">
-        <a href="/users"><span class="glyphicon glyphicon-user"></span> Se connecter</a>
-      </li>
-      <li class="navbar-right">
-        <a href="/panier"><span class="glyphicon glyphicon-shopping-cart"></span> Panier ( <%= session[:paniers].count %> )</a>
+        <a href="/panier"><span class="glyphicon glyphicon-shopping-cart"></span> Panier
+          ( <%= session[:paniers].count %> )</a>
       </li>
     </ul>
   </div>
@@ -38,6 +49,9 @@
 </div>
 <pre>
   <%= session[:paniers] %>
+</pre>
+<pre>
+  <%= session[:user_id] %>
 </pre>
 </body>
 </html>
