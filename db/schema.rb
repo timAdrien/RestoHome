@@ -11,58 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170525164401) do
+ActiveRecord::Schema.define(version: 20140707111715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "attachinary_files", force: :cascade do |t|
-    t.integer  "attachinariable_id"
-    t.string   "attachinariable_type"
-    t.string   "scope"
-    t.string   "public_id"
-    t.string   "version"
-    t.integer  "width"
-    t.integer  "height"
-    t.string   "format"
-    t.string   "resource_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "attachinary_files", ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent", using: :btree
-
-  create_table "plats", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "restaurant_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "restaurants", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "ville_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "username"
-    t.string   "mdp"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "villes", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "widgets", force: :cascade do |t|
+  create_table "widgets", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "stock"

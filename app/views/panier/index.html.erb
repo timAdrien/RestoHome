@@ -1,8 +1,0 @@
-<% session[:paniers].each_with_index do |panier, index| %>
-    <div>
-      <span><%= panier["name"] %></span>
-      <span><img width="50" src="<%= panier["image"] %>"></span>
-      <span><%= panier["description"] %></span>
-      <span><%= link_to 'supprimer ce plat', "panier/#{index}", method: :delete, data: { confirm: 'Are you sure?' } %></span>
-    </div>
-<% end %>
