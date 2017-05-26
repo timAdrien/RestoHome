@@ -9,6 +9,9 @@ class AccountController < ApplicationController
   end
 
   def creation
+    if session[:user_id] != false
+      redirect_to "/account"
+    end
   end
 
   def create
@@ -27,6 +30,9 @@ class AccountController < ApplicationController
   end
 
   def connection
+    if session[:user_id] != false
+      redirect_to "/account"
+    end
   end
 
   def disconnect
