@@ -1,6 +1,6 @@
-<%= form_for(:users, :url => {:controller => 'users', :action => 'create'}) do |f| %>
+<%= form_for(:users, :url => {:controller => 'account', :action => 'connect'}) do |f| %>
     <p> Email:</br> <%= f.text_field :email%> </p>
     <p> Password:</br> <%= f.password_field :password%></p>
     <%= f.submit :Signup %>
 <% end %>
-<%= @connected %>
+<a href="/creation">créer un compte ?</a>

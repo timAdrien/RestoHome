@@ -22,7 +22,7 @@
     <ul class="nav navbar-nav navbar-right">
       <% if session[:user_id] == false %>
           <li class="navbar-right">
-            <a href="/users"><span class="glyphicon glyphicon-user"></span> Se connecter</a>
+            <a href="/connection"><span class="glyphicon glyphicon-user"></span> Se connecter</a>
           </li>
       <% end %>
       <% if session[:user_id] != false %>
